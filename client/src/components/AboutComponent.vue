@@ -3,3 +3,5 @@
     <p>About</p>
   </div>
 </template>
+
+<style scoped></style>
