@@ -29,11 +29,5 @@ header {
     display: flex;
     place-items: center;
   }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }
 </style>

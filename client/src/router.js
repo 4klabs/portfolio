@@ -6,7 +6,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: () => import("../views/HomeView.vue"),
+      component: () => import("./views/HomeView.vue"),
     },
     {
       path: "/:catchAll(.*)",
@@ -15,7 +15,7 @@ const router = createRouter({
     {
       path: "/404",
       name: "404",
-      component: () => import("../views/404View.vue"),
+      component: () => import("./views/404View.vue"),
     },
   ],
 });
