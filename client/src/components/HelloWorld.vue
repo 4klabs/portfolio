@@ -24,6 +24,12 @@ h1 {
   text-align: center;
 }
 
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
 @media (min-width: 1024px) {
   .greetings h1 {
     text-align: left;
