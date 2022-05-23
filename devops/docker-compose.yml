@@ -438,14 +438,14 @@ services:
   ### Client #####################################################
   client:
     build:
-      context: ../../client
+      context: ../client
+    command: npm run dev
     ports:
       - "${PORTFOLIO_CLIENT_PORT}:3000"
     stdin_open: true
-    environment:
-      - CHOKIDAR_USEPOLLING=true
     networks:
       - frontend
       - backend
     volumes:
-      - ../../client:/app
+      - ../client:/usr/app
+      - /usr/app/node_modules
