@@ -1,20 +1,44 @@
 <template>
-  <header>
-    <Navbar />
-    <Header />
-  </header>
+  <div>
+    <header>
+      <navbar-component />
+      <header-component />
+    </header>
 
-  <main>
-    <About />
-    <Experience />
-    <Education />
-  </main>
+    <main>
+      <about-component />
+      <experience-component />
+      <education-component />
+    </main>
 
-  <footer>
-    <Contact />
-    <Footer />
-  </footer>
+    <footer>
+      <contact-component />
+      <footer-component />
+    </footer>
+  </div>
 </template>
+
+<script>
+import AboutComponent from '../components/AboutComponent.vue';
+import ContactComponent from '../components/ContactComponent.vue';
+import EducationComponent from '../components/EducationComponent.vue';
+import ExperienceComponent from '../components/ExperienceComponent.vue';
+import FooterComponent from '../components/FooterComponent.vue';
+import HeaderComponent from '../components/HeaderComponent.vue';
+import NavbarComponent from '../components/NavbarComponent.vue';
+
+export default {
+  components: {
+    AboutComponent,
+    ContactComponent,
+    EducationComponent,
+    ExperienceComponent,
+    FooterComponent,
+    HeaderComponent,
+    NavbarComponent,
+  },
+};
+</script>
 
 <style scoped>
 header {
@@ -31,13 +55,3 @@ footer {
   border: 1px solid green;
 }
 </style>
-
-<script setup>
-import About from "../components/AboutComponent.vue";
-import Contact from "../components/ContactComponent.vue";
-import Education from "../components/EducationComponent.vue";
-import Experience from "../components/ExperienceComponent.vue";
-import Footer from "../components/FooterComponent.vue";
-import Header from "../components/HeaderComponent.vue";
-import Navbar from "../components/NavbarComponent.vue";
-</script>

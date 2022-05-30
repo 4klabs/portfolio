@@ -6,8 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN chown -R node /usr/app/node_modules
+EXPOSE 8080
 
-USER node
-
-COPY . .
+CMD npm run serve -- --port 8080 --host 0.0.0.0

@@ -439,13 +439,10 @@ services:
   client:
     build:
       context: ../client
-    command: npm run dev
     ports:
-      - "${PORTFOLIO_CLIENT_PORT}:3000"
-    stdin_open: true
+      - "${PORTFOLIO_CLIENT_PORT-8080}:8080"
     networks:
       - frontend
       - backend
     volumes:
       - ../client:/usr/app
-      - /usr/app/node_modules
