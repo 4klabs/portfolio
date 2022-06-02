@@ -33,3 +33,7 @@ make terminal # or just "make"
 ```sh
 make stop
 ```
+
+
+<img class="victor_image" src="../assets/victor_image1.jpg" onmouseover="this.src='../assets/victor_image1.jpg'"
+      onmouseout="this.src='../assets/victor_image.jpg'">
