@@ -57,14 +57,9 @@
 figure {
   width: 400px;
   height: 450px;
-  background-image: url(../assets/victor_image1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 6px 6px 6px 6px;
-}
-
-figure:hover {
-  background-image: url(../assets/victor_image.jpg);
 }
 
 .victor_image {

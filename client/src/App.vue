@@ -19,14 +19,8 @@ export default {
 
 <style>
 @import './assets/base.css';
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-
-html, body {
-  font-family: 'Rajdhani', sans-serif;
-}
 
 #app {
-  font-family: 'Patrick Hand', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
