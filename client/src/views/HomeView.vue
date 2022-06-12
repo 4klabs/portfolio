@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <header>
       <navbar-component />
       <header-component />
@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style scoped>
+#home {
+  color: var(--white-soft);
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
