@@ -1,79 +1,101 @@
 <template>
-  <div class="About">
-    <section class="Description">
-      <h1> <span class="numero">01. </span>Sobre mim </h1>
-        <p>Oi! Eu sou Victor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ut tenetur, provident nemo sapiente pariatur ad in delectus! <br> 
-        Unde suscipit autem quos veritatis eos quae? Provident voluptatum praesentium possimus quod...
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quis officia deserunt ea itaque dolorum. Harum architecto inventore saepe non magni <br>
-         at optio placeat laboriosam! Beatae officia molestias quasi suscipit.
-          <ul>
-            <li>PHP/ laravel</li>
-            <li>Vue.js</li>
-            <li>Html</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-        </p>
+  <div id="about">
+    <section id="description">
+      <div id="title">
+        <span>{{ number }}.</span>
+        <h1>{{ title }}</h1>
+      </div>
+
+      <p>{{ description }}</p>
+      <ul v-for="skill in skills" :key="skill">
+        <li>{{ skill }}</li>
+      </ul>
     </section>
-    <figure>
-      <!--Foto de perfil-->
-    </figure>
+
+    <img :src="imageUrl" />
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      number: '01',
+      title: 'Sobre mim',
+      description:
+        'Oi! Eu sou Victor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ut tenetur, provident nemo sapiente pariatur ad in delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quis officia deserunt ea itaque dolorum. Harum architecto inventore saepe non magni',
+      skills: ['PHP/Laravel', 'Vue.js', 'Html', 'CSS', 'JavaScript'],
+      imageUrl:
+        'https://preview.redd.it/ajcve4pklyt71.jpg?auto=webp&s=b7717972a8a1e6b21f2b95e6d41acc57000112cb',
+    };
+  },
+};
+</script>
+
 <style scoped>
-.About {
- background-color: rgb(1, 1, 34);
- height: 700px;
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- gap: 2em;
-}
-
-.Description h1 {
-  align-items: flex-start;
-  color: rgb(165, 164, 164);
-  font-size: 30px;
-}
-
-.Description {
-  font-size: 20px;
-  color: rgb(165, 164, 164);
+#about {
+  background-color: var(--dark-blue);
+  width: 100%;
   display: flex;
-  height: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4rem 0rem;
+}
+
+#description {
+  display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 100%;
+  width: 60%;
+}
+
+#description p {
+  margin: 1.6rem 0;
+}
+
+@media (max-width: 768px) {
+  #description {
+    width: 100%;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  #about {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  img {
+    margin-top: 2rem;
+  }
+}
+
+#title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#title span {
+  font-size: 2.4rem;
+  padding-right: 0.6rem;
+  color: var(--light-green);
+}
+
+#title h1 {
+  font-size: 2.4rem;
   align-items: flex-start;
-  width: 40%;
-}
-
-.numero {
-  font-size: 30px;
-  color: rgb(0, 0, 248);
-}
-
-figure {
-  width: 400px;
-  height: 450px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 6px 6px 6px 6px;
-}
-
-.victor_image {
-  width: 400px;
-  height: 400px;
+  color: var(--white-soft);
 }
 
 ul {
-  list-style: none;
+  list-style-type: circle;
 }
 
-ul li:before {
-  content: "\25AA";
-  margin: 0 5px;
-  color: rgb(0, 0, 248)
+img {
+  width: 100%;
+  max-width: 30rem;
 }
 </style>
