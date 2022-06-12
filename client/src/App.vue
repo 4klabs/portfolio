@@ -19,7 +19,6 @@ export default {
 
 <style>
 @import './assets/base.css';
-
 #app {
   display: flex;
   flex-direction: column;
