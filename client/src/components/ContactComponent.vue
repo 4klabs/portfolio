@@ -37,7 +37,7 @@ export default {
 
 <style scoped>
 #contact {
-  background-color: var(--dark-blue);
+  background-color: #0a192f;
 }
 
 #titleContact {

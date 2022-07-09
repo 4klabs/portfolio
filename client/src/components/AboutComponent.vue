@@ -20,13 +20,13 @@
 export default {
   data() {
     return {
-      number: '01',
-      title: 'Sobre mim',
+      number: "01",
+      title: "Sobre mim",
       description:
-        'Oi! Eu sou Victor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ut tenetur, provident nemo sapiente pariatur ad in delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quis officia deserunt ea itaque dolorum. Harum architecto inventore saepe non magni',
-      skills: ['PHP/Laravel', 'Vue.js', 'Html', 'CSS', 'JavaScript'],
+        "Oi! Eu sou Victor Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ut tenetur, provident nemo sapiente pariatur ad in delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quis officia deserunt ea itaque dolorum. Harum architecto inventore saepe non magni",
+      skills: ["PHP/Laravel", "Vue.js", "Html", "CSS", "JavaScript"],
       imageUrl:
-        'https://preview.redd.it/ajcve4pklyt71.jpg?auto=webp&s=b7717972a8a1e6b21f2b95e6d41acc57000112cb',
+        "https://preview.redd.it/ajcve4pklyt71.jpg?auto=webp&s=b7717972a8a1e6b21f2b95e6d41acc57000112cb",
     };
   },
 };
@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 #about {
-  background-color: var(--dark-blue);
+  background-color: #0a192f;
   width: 100%;
   display: flex;
   align-items: center;
