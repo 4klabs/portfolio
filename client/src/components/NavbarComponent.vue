@@ -1,5 +1,6 @@
 <template>
   <div id="header">
+
     <a id="logo"> 
       <img id="brand" src="../assets/logo-mn.png">
     </a>
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+
   export default {   
     data () {
       return {
@@ -27,6 +29,7 @@
 </script>
 
 <style scoped>
+
  #header {
     background-color: #0a192f;
     font-family: 'Fira Code', monospace;
@@ -70,5 +73,4 @@
 a:hover #link-cv{
   background-color: #11294d;
 }
-
 </style>
