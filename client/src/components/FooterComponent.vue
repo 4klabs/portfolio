@@ -1,6 +1,6 @@
 <template>
   <div id= "footer">
-    <p> Copyright © <span> {{ currentYear }}</span></p>
+    <p>Copyright © {{ currentYear }}</p>
     <p> Desenvolvido por Matheus Nascimento e Victor Costa </p>
     <p> All Rights Reserved </p>
   </div>
