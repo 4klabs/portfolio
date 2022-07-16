@@ -17,10 +17,19 @@ export default {
 </script>
 
 <style scoped>
+
 #footer {
   background-color: #0a192f;
   text-align: center;
   font-size: small;
   color: #A8B2D1;
 }
+
+  @media (max-width: 768px) {
+  #contact {
+    width: 100%;
+    padding: 2rem;
+    }
+  }
+  
 </style>
